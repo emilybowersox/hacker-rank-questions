@@ -1,9 +1,20 @@
 import java.util.Scanner;
 
 public class OutputFormatting {
-    private static String blankSpaces (String spaces) {
-        return "     ";
+    private static String blankSpaces (String formatString) {
+        int length = formatString.length();
+        if (length >= 15) {
+            return formatString;
+        } else {
+            StringBuilder sb = new StringBuilder();
+            sb.append(formatString);
+            while (sb.length() < 15) {
+                sb.append(" ");
+            }
+            return sb.toString();
+        }
     }
+
 
     private static String aZero (int param) {
         String.valueOf(param);
@@ -27,7 +38,7 @@ public class OutputFormatting {
 
             // int c = Integer.toString(int d);
 
-            System.out.printf(s1 + aZero(x) + x + '\n');
+            System.out.printf(blankSpaces(s1)+ aZero(x) + x + '\n');
         }
         System.out.println("================================");
 
