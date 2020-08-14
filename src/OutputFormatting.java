@@ -15,18 +15,17 @@ public class OutputFormatting {
         }
     }
 
-
     private static String aZero (int param) {
         String.valueOf(param);
-        String d = "0";
         int b = String.valueOf(param).length();
-        if (b < 3 ){
+        if (b < 2 ){
+            return "00";
+        } else if (b < 3){
             return "0";
         } else {
             return "";
         }
     }
-
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
