@@ -40,10 +40,28 @@ public class LoopsTwo {
     static long aVeryBigSum(long[] ar) {
         long n = ar.length;
         long sum = 0;
-        for (int i=0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             sum += ar[i];
         }
-      return sum;
+        return sum;
     }
+
+
+//Java loops 2
+
+//    static int javaLoopsTwo(int a, int b, int n) {
+//        List<Integer> terms = new ArrayList<Integer>();
+//        int sum = a;
+//        for (int i = 0; i < n; i++) {
+//
+//            Math.power()
+//
+//        }
+//
+//
+//        return a +
+//
+//    }
+
 
 }
