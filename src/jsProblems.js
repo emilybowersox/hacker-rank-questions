@@ -7,3 +7,54 @@ console.log(addIntegers);
 console.log(firstDecimal + Number(secondDecimal));
 console.log(firstString + secondString);
 
+//2 loops
+// function vowelsAndConsonants(s) {
+//     for (var i = 0; i < s.length; i++){
+//         console.log(s[i]);
+//     }
+// }
+//
+// function vowelsAndConsonants(s) {
+//     var newArray = new Array;
+//     for (var i = 0; i < s.length; i++){
+//         if (i = "a") {
+//             newArray.push(i);
+//         } else if (i = "e") {
+//             newArray.push(i);
+//         } else if (i = i) {
+//             newArray.push(i);
+//         }else if (i = o) {
+//             newArray.push(i);
+//         } else if (i = u) {
+//             newArray.push(i);
+//         } else {
+//             newArray.push(i);
+//         }
+//
+//     }
+//     return newArray;
+//     console.log(newArray);
+//     console.log(newArray[i]);
+//     console.log(s[i]);
+// }
+//
+// function vowelsAndConsonants(s) {
+//     var newString = "";
+//     for (var i = 0; i < s.length; i++){
+//
+//         if (i = "a") {
+//             newString += i;
+//         } else if (i = "e") {
+//             newString += i;
+//         } else if (i = i) {
+//             newString += i;
+//         }else if (i = o) {
+//             newString += i;
+//         } else if (i = u) {
+//             newString += i;
+//         } else {
+//             newString += i;
+//         }
+//         return newString;
+//     } console.log(newString);
+// }
