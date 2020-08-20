@@ -14,12 +14,14 @@ function vowelsAndConsonants(aString) {
         if (aString[i] == "a" || aString[i] == "e" || aString[i] == "i" || aString[i] == "o" || aString[i] == "u")
             console.log(aString[i]);
     }
-    for (var i = 0; i < aString.length; i++){
-        if (aString[i] != "a" && aString[i] != "e" && aString[i] != "i" && aString[i] != "o" && aString[i] != "u"){
-            console.log(aString[i]);}
+    for (var i = 0; i < aString.length; i++) {
+        if (aString[i] != "a" && aString[i] != "e" && aString[i] != "i" && aString[i] != "o" && aString[i] != "u") {
+            console.log(aString[i]);
+        }
     }
-
 }
+
+
 // function vowelsAndConsonants(s) {
 //     for (var i = 0; i < s.length; i++) {
 //         if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u")
