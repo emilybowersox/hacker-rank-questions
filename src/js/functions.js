@@ -51,3 +51,17 @@ function getSecondLargest(nums) {
         return nums[nums.length - 2];
     }
 }
+
+//doesn't work in all cases
+function getSecondLargest(nums) {
+    nums.sort();
+    var lastOne = nums[nums.length - 1];
+
+    for (var i = 2; i < nums.length; i++) {
+        if (lastOne == nums[nums.length - i]) {
+            return nums[nums.length - (i+1)];
+        } else {
+            continue;
+        }
+    }
+}
