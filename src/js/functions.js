@@ -39,3 +39,15 @@ function getGrade(score) {
     }
     return grade;
 }
+
+//proof of concept, need to put if/else in a loop
+function getSecondLargest(nums) {
+    nums.sort();
+    var lastOne = nums[nums.length - 1];
+
+    if (lastOne == nums[nums.length - 2]) {
+        return nums[nums.length - 3];
+    } else {
+        return nums[nums.length - 2];
+    }
+}
