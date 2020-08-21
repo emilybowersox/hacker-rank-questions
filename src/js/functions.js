@@ -23,20 +23,19 @@
 // }
 
 function getGrade(score) {
-    if (25 < score <= 30) {
-        return "A";
-    } else if (20 < score <= 25) {
-        return "B";
-    } else if (15 < score <= 20) {
-        return "C";
-    } else if (10 < score <= 15) {
-        return "D";
-    } else if (5 < score <= 10) {
-        return "E";
+    let grade;
+    if (score <= 30 && score > 25) {
+        grade = "A";
+    } else if (score <= 25 && score > 20) {
+        grade = "B";
+    } else if (score <= 20 && score > 15) {
+        grade = "C";
+    } else if (score <= 15 && score > 10) {
+        grade = "D";
+    } else if (score <= 10 && score > 5) {
+        grade = "E";
     } else {
-        return "F";
+        grade = "F";
     }
-
+    return grade;
 }
-
-console.log(getGrade(15));
