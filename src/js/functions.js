@@ -22,6 +22,20 @@
 //
 // }
 
+//This one!
+function factorial(aNumber) {
+    var result = aNumber;
+
+//   if (aNumber === 0 || aNumber === 1)
+//     return 1;
+
+    while (aNumber > 1) {
+        aNumber--;
+        var result = result * aNumber;
+    }
+    return result;
+}
+
 function getGrade(score) {
     let grade;
     if (score <= 30 && score > 25) {

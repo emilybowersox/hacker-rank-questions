@@ -40,7 +40,7 @@ public class JavaIntro {
 
 
     // Java Int to String
-    String s = Integer.toString(n);
+//    String s = Integer.toString(n);
 }
 
 
