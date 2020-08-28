@@ -54,6 +54,44 @@ function getGrade(score) {
     return grade;
 }
 
+//switch case
+function getLetter(s) {
+    let letter =  s.charAt(0);
+    switch (letter) {
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+            return "A";
+            break;
+        case "b":
+        case "c":
+        case "d":
+        case "f":
+        case "g":
+            return "B";
+            break;
+        case "h":
+        case "j":
+        case "k":
+        case "l":
+        case "m":
+            return "C";
+            break;
+        case "h":
+        case "j":
+        case "k":
+        case "l":
+        case "m":
+            return "C";
+            break;
+        default:
+            return "D";
+    }
+    return letter;
+}
+
 //proof of concept, need to put if/else in a loop
 function getSecondLargest(nums) {
     nums.sort();
@@ -79,3 +117,4 @@ function getSecondLargest(nums) {
         }
     }
 }
+
