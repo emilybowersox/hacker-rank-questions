@@ -136,3 +136,29 @@ function getSecondLargest(nums) {
     }
 }
 
+
+//day 4 count objects
+//not iterating through the loop
+// objects is the name of the array that contains the objects (have to go  /// one level deeper)
+function getCount(objects) {
+    var indexLength = objects.length;
+    // console.log(indexLength);
+    //for objects[0] --> objects[4]
+    var sum = 0;
+    for (var i = 0; i < indexLength; i++) {
+        // console.log(objects[1].x);
+        // console.log(objects[1].y);
+        // console.log(objects[0].x == objects[0].y);
+        // console.log(objects[2].x == objects[2].y);
+
+        if (objects[i].x == objects[i].y) {
+            console.log(objects[i]);
+            sum += 1;
+        } else {
+            continue;
+        }
+
+        return sum;
+
+    }
+}
