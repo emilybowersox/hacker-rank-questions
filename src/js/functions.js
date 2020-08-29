@@ -46,6 +46,14 @@ function main() {
     console.log(2 * Math.PI * r);
 }
 
+//Day 4 create a rectangle object
+function Rectangle(a, b) {
+    this.length = a,
+        this.width = b,
+        this.perimeter = 2 * (a + b),
+        this.area = a * b
+}
+
 function getGrade(score) {
     let grade;
     if (score <= 30 && score > 25) {
