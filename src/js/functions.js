@@ -146,6 +146,7 @@ function getCount(objects) {
     //for objects[0] --> objects[4]
     var sum = 0;
     for (var i = 0; i < indexLength; i++) {
+
         // console.log(objects[1].x);
         // console.log(objects[1].y);
         // console.log(objects[0].x == objects[0].y);
@@ -153,12 +154,15 @@ function getCount(objects) {
 
         if (objects[i].x == objects[i].y) {
             console.log(objects[i]);
+            console.log("Match found");
             sum += 1;
+            continue;
         } else {
+            sum += 0;
+            console.log(objects[i]);
+            console.log("nada");
             continue;
         }
-
-        return sum;
-
     }
+    return sum;
 }
