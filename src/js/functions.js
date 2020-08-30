@@ -138,8 +138,9 @@ function getSecondLargest(nums) {
 
 
 //day 4 count objects
-//not iterating through the loop
+//not iterating through the loop (added "continue" to both if/else statements)
 // objects is the name of the array that contains the objects (have to go  /// one level deeper)
+//here's the work to get there- had to move var sum and return sum outside of the loop!
 function getCount(objects) {
     var indexLength = objects.length;
     // console.log(indexLength);
@@ -161,6 +162,20 @@ function getCount(objects) {
             sum += 0;
             console.log(objects[i]);
             console.log("nada");
+            continue;
+        }
+    }
+    return sum;
+}
+
+//cleaned up version
+function getCount(objects) {
+    var sum = 0;
+    for (var i = 0; i < objects.length; i++) {
+        if (objects[i].x == objects[i].y) {
+            sum += 1;
+            continue;
+        } else {
             continue;
         }
     }
