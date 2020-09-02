@@ -136,6 +136,23 @@ function getSecondLargest(nums) {
     }
 }
 
+// function getSecondLargest(nums) {
+//     nums.sort();
+//     var lastOne = nums[nums.length - 1];
+//
+//     for (var i = 2; i < nums.length; i++) {
+//         if (lastOne !== nums[nums.length - i]) {
+//             return nums[nums.length -i];
+//             // console.log(nums[nums.length - i]);
+//             // continue;
+//             // return nums[nums.length - (i-1)];
+//         } else {
+//             continue;
+//         }
+//     }
+//
+// }
+
 
 //day 4 count objects
 //not iterating through the loop (added "continue" to both if/else statements)
