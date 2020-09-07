@@ -12,13 +12,13 @@ function countingValleys(n, s) {
             }
         } else if (s[i] == "D") {
             seaLevel -= 1;
-            if (seaLevel == 0) {
-                valleyCount += 1;
-            }
+            // if (seaLevel == 0) {
+            //     valleyCount += 1;
+            // }
         }
     }
 
-    return valleyCount - 1;
+    return valleyCount;
 
 
     // var up = 0;
