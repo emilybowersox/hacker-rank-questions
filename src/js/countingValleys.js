@@ -14,7 +14,6 @@ function countingValleys(n, s) {
     return seaLevel;
 
 
-
     // var up = 0;
     //
     // for (var i = 0; i < n; i++) {
