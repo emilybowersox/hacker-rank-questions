@@ -15,6 +15,8 @@
 //     return sum;
 // }
 
+
+//" ... " is the spread operator. "It expands an iterable to its individual elements"
 function birthdayCakeCandles(candles) {
     const max = Math.max(...candles);
     var count = 0;
