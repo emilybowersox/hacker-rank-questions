@@ -1,8 +1,8 @@
 "use strict";
 
 function birthdayCakeCandles(candles) {
-    var sum = 0;
-    return candles.sort().reverse();
-
+    var sum = 1;
+    var str = candles.sort().reverse();
+    var newArray = str.split();
 
 }
