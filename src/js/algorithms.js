@@ -27,3 +27,16 @@ function birthdayCakeCandles(candles) {
     }
     return count;
 }
+
+
+
+//only printing the first line of code- need to print a loop within a loop
+function staircase(n) {
+    var space = " ";
+    var pound = "#";
+    for (var i = 1; i <= n; i++) {
+        while (i <=n) {
+            return space.repeat(n-i) + pound.repeat(i);
+        }
+    }
+}
