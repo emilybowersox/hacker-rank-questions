@@ -40,3 +40,6 @@ function staircase(n) {
         }
     }
 }
+
+
+//note
