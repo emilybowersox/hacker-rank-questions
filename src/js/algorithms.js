@@ -42,4 +42,3 @@ function staircase(n) {
 }
 
 
-//note
