@@ -10,3 +10,16 @@ function reverseString(s) {
         console.log(s);
     }
 }
+
+
+//try
+function isPositive(a) {
+    if (a >= 1) {
+        return "YES";
+    } else if (a = 0) {
+        console.error("Zero Error");
+    } else if (a < 0) {
+        console.error("Negative Error");
+    }
+}
+
