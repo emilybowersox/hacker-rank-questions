@@ -10,6 +10,7 @@ function reverseString(s) {
     } catch (error) {
         console.error(error);
     } finally {
+        //made it a recursive loop oops
         console.log(reverseString(s));
     }
 
