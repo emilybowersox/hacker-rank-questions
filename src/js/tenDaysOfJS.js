@@ -14,12 +14,15 @@ function reverseString(s) {
 
 //try
 function isPositive(a) {
-    if (a >= 1) {
-        return "YES";
-    } else if (a = 0) {
-        console.error("Zero Error");
-    } else if (a < 0) {
-        console.error("Negative Error");
+    try {
+        if (a >= 1)
+            return "YES";
+    } catch (e) {
+        if (a = 0) {
+            console.log("Zero Error");
+        } else if (a < 0) {
+            console.log("Negative Error")
+        }
     }
 }
 
