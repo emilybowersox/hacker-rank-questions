@@ -1,5 +1,6 @@
 "use strict";
 
+//Counting Valleys
 function countingValleys(n, s) {
     var valleyCount = 0;
     var seaLevel = 0;
@@ -18,5 +19,18 @@ function countingValleys(n, s) {
 
 }
 
+//Grading students
+function gradingStudents(grades) {
+    //returns original input
+    return grades;
+}
 
+function gradingStudents(grades) {
+    grades.forEach(myFunction)
+    function myFunction(item, index, arr) {
+        arr[index] = item * 10;
+    }
+    //returns grades array * 10
+    return grades;
+}
 
