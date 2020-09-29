@@ -27,10 +27,12 @@ function gradingStudents(grades) {
 
 function gradingStudents(grades) {
     grades.forEach(myFunction)
-    function myFunction(item, index, arr) {
-        arr[index] = item * 10;
+    function myFunction(aGrade, indexOfGrade, arrayOfGrades) {
+        if (aGrade < 70) {
+            arrayOfGrades[indexOfGrade] = aGrade * 10;
+        } else {
+            arrayOfGrades[indexOfGrade] = aGrade * 1000;
+        }
     }
-    //returns grades array * 10
     return grades;
 }
-
