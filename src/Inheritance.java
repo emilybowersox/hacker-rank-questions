@@ -11,10 +11,13 @@ class Student extends Person {
         this.testScores = scores;
     }
 
-    public String calculate() {
-        return "a score";
-    }
 
+    public String calculate() {
+        int sum = 0;
+        for (int i : testScores)
+            sum += i;
+        return Integer.toString(sum);
+    }
 }
 
 //}
