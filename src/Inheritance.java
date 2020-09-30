@@ -16,7 +16,22 @@ class Student extends Person {
         int sum = 0;
         for (int i : testScores)
             sum += i;
-        return Integer.toString(sum);
+
+        double av = sum / testScores.length;
+
+        if (av <= 100 && av >= 90) {
+            return "O";
+        } else if (av < 90 && av >= 80) {
+            return "E";
+        } else if (av < 80 && av >= 70) {
+            return "A";
+        } else if (av < 70 && av >= 55) {
+            return "P";
+        } else if (av < 55 && av >= 40) {
+            return "D";
+        } else {
+            return "T";
+        }
     }
 }
 
