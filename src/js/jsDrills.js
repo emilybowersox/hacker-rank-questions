@@ -15,3 +15,22 @@ function hasVowels (aString){
     return false;
 }
 
+// 45 Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
+var vowels = ["a", "e", "i", "o", "u"];
+
+function countVowels (aString){
+    for (var i = 0; i <vowels.length; i++){
+        if (aString.includes(vowels[i])){
+            return
+        }
+    }
+    return false;
+}
+
+
+// 46 Write a function definition named removeVowels that takes in string and returns the string without any vowels
+
+function removeVowels(myString) {
+
+    return
+}
