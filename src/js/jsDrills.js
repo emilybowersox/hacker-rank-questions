@@ -16,21 +16,45 @@ function hasVowels (aString){
 }
 
 // 45 Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
-var vowels = ["a", "e", "i", "o", "u"];
+//**************
+// function countVowels (aString){
+//     var vowels = ["a", "e", "i", "o", "u"];
+//     for (var i = 0; i <vowels.length; i++){
+//         if (aString.includes(vowels[i])){
+//             return
+//         }
+//     }
+//     return false;
+// }
 
-function countVowels (aString){
-    for (var i = 0; i <vowels.length; i++){
-        if (aString.includes(vowels[i])){
-            return
-        }
-    }
-    return false;
-}
-
-
+//**********
 // 46 Write a function definition named removeVowels that takes in string and returns the string without any vowels
+//
+// function removeVowels(myString) {
+//
+//     return
+// }
 
-function removeVowels(myString) {
 
-    return
+// 47 Write a function definition named startsWithVowel that takes in string and true if the string starts with a vowel
+function startsWithVowel(myString) {
+
+    if ((myString[0] === "a") || (myString[0] === "e") || (myString[0] === "i")|| (myString[0] === "o") || (myString[0] === "u")) {
+        return true;
+    } else {
+        return "sorry, your string does not start with a vowel";
+    }
+
 }
+
+// 48  Write a function definition named endsWithVowel that takes in string and true if the string ends with a vowel
+
+function endsWithVowel(theString) {
+    var lastLetterIndex = theString.length - 1;
+    var lastLetter = theString[lastLetterIndex];
+
+    return lastLetter === "a" || lastLetter === "e" || lastLetter === "i" || lastLetter === "o" || lastLetter === "u";
+
+}
+// 49  Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
+
