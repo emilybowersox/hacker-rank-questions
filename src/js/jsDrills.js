@@ -58,3 +58,9 @@ function endsWithVowel(theString) {
 }
 // 49  Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
 
+function startsWithAndEndsWithVowel(theString) {
+    var firstLetter = theString[0];
+    var lastLetter = theString[theString.length - 1];
+
+
+}
