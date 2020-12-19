@@ -15,8 +15,8 @@ function hasVowels (aString){
     return false;
 }
 
-// 45 Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
-//**************
+// 45 Write a function definition named countVowels that takes in value and returns the count of the number of vowels in a sequence.
+//**** wrong
 // function countVowels (aString){
 //     var vowels = ["a", "e", "i", "o", "u"];
 //     for (var i = 0; i <vowels.length; i++){
@@ -29,10 +29,19 @@ function hasVowels (aString){
 
 //**********
 // 46 Write a function definition named removeVowels that takes in string and returns the string without any vowels
-//
+//"Uncaught TypeError: finalString.push is not a function"
 // function removeVowels(myString) {
+// var stringArray = myString.split("");
+// var finalString = "";
 //
-//     return
+// for (var i = 0; i < stringArray.length; i++) {
+//     if (hasVowels(stringArray[i]) === true) {
+//         finalString.push(stringArray[i]);
+//     } else {
+//         continue;
+//     }
+// }
+//     return finalString;
 // }
 
 
